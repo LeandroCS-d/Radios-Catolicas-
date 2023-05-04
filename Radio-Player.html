@@ -102,6 +102,7 @@ footer {
 			   <button id="k">Rádio Vaticano</button>
           <button id="l">Rádio Louvar</button>
            <button id="m">Aliança FM 106.3 </button>
+              <button id="n">Rádio Lumen Clássica</button>
       
     <br /><br />
     
@@ -137,6 +138,7 @@ const j = document.querySelector('#j');
 const k = document.querySelector('#k');
 const l = document.querySelector('#l');
 const m = document.querySelector('#m');
+const n = document.querySelector('#n');
 const nowPlaying = document.querySelector('#nowPlaying');
 radioPlayer.volume = 1.0; //set initial audio player volume to 0.7
 a.addEventListener('click', changeStation1);
@@ -152,6 +154,7 @@ j.addEventListener('click', changeStation10);
 k.addEventListener('click', changeStation11);
 l.addEventListener('click', changeStation12);
 m.addEventListener('click', changeStation13);
+n.addEventListener('click', changeStation14);
 
 function changeStation1() {
     radioPlayer.src = "https://stm01.virtualcast.com.br:8138/live";
@@ -170,6 +173,8 @@ j.classList.remove("activeBtn");
 k.classList.remove("activeBtn");
 l.classList.remove("activeBtn");	
 m.classList.remove("activeBtn");
+n.classList.remove("activeBtn");
+
 }
 
 function changeStation2() {
@@ -189,7 +194,7 @@ j.classList.remove("activeBtn");
 k.classList.remove("activeBtn");   
 l.classList.remove("activeBtn");	
 m.classList.remove("activeBtn");
-
+n.classList.remove("activeBtn");
 }
 
 function changeStation3() {
@@ -209,6 +214,7 @@ j.classList.remove("activeBtn");
 k.classList.remove("activeBtn"); 
 l.classList.remove("activeBtn");	
 m.classList.remove("activeBtn");
+n.classList.remove("activeBtn");
 }
 
 function changeStation4() {
@@ -228,6 +234,7 @@ j.classList.remove("activeBtn");
 k.classList.remove("activeBtn");  
 l.classList.remove("activeBtn");
 m.classList.remove("activeBtn");
+n.classList.remove("activeBtn");
 }
 function changeStation5() {
     radioPlayer.src = "https://hts05.kshost.com.br:9456/;";
@@ -246,6 +253,7 @@ j.classList.remove("activeBtn");
 k.classList.remove("activeBtn");
 l.classList.remove("activeBtn");	
 m.classList.remove("activeBtn");
+n.classList.remove("activeBtn");
 }
 function changeStation6() {
     radioPlayer.src = "http://streaming05.hstbr.net:8260/live";
@@ -264,6 +272,7 @@ j.classList.remove("activeBtn");
 k.classList.remove("activeBtn"); 
 l.classList.remove("activeBtn");	
 m.classList.remove("activeBtn");
+n.classList.remove("activeBtn");
 }
 function changeStation7() {
     radioPlayer.src = "http://192.99.188.208:4393/live"
@@ -282,6 +291,7 @@ j.classList.remove("activeBtn");
 k.classList.remove("activeBtn"); 
 l.classList.remove("activeBtn");	
 m.classList.remove("activeBtn");
+n.classList.remove("activeBtn");
 }
 function changeStation8() {
     radioPlayer.src = "https://aparecida.jmvstream.com/stream";
@@ -300,6 +310,7 @@ j.classList.remove("activeBtn");
 k.classList.remove("activeBtn");
 l.classList.remove("activeBtn");	
 m.classList.remove("activeBtn");
+n.classList.remove("activeBtn");
 }
 function changeStation9() {
     radioPlayer.src = "http://centova.onradio.biz:8071/stream";
@@ -318,6 +329,7 @@ j.classList.remove("activeBtn");
 k.classList.remove("activeBtn"); 
 l.classList.remove("activeBtn");	
 m.classList.remove("activeBtn");
+n.classList.remove("activeBtn");
 }
 function changeStation10() {
     radioPlayer.src = "https://cloud1.cdnseguro.com:20038/stream";
@@ -336,6 +348,7 @@ j.classList.add("activeBtn");
 k.classList.remove("activeBtn");    
 l.classList.remove("activeBtn");
 m.classList.remove("activeBtn");
+n.classList.remove("activeBtn");
 }
 function changeStation11() {
     radioPlayer.src = "https://radio.vaticannews.va/stream-pt-b?Radio-Vaticano";
@@ -354,6 +367,7 @@ j.classList.remove("activeBtn");
 k.classList.add("activeBtn");  
 l.classList.remove("activeBtn");
 m.classList.remove("activeBtn");
+n.classList.remove("activeBtn");
 }
 function changeStation12() {
     radioPlayer.src = "http://server02.ouvir.radio.br:8040/stream";
@@ -372,6 +386,7 @@ j.classList.remove("activeBtn");
 k.classList.remove("activeBtn");  
 l.classList.add("activeBtn");	
 m.classList.remove("activeBtn");
+n.classList.remove("activeBtn");
 }
 function changeStation13() {
     radioPlayer.src = "http://streaming.omegasistemas.com.br:8407/stream.mp3";
@@ -390,18 +405,39 @@ j.classList.remove("activeBtn");
 k.classList.remove("activeBtn");  
 l.classList.remove("activeBtn");
 m.classList.add("activeBtn");
+n.classList.remove("activeBtn");
 }
+function changeStation14() {
+    radioPlayer.src = "https://shout25.crossradio.com.br:18378/stream";
+
+    radioPlayer.setAttribute('autoplay', true);
+    d.classList.remove("activeBtn");
+   b.classList.remove("activeBtn");
+    c.classList.remove("activeBtn");
+    a.classList.remove("activeBtn");
+	e.classList.remove("activeBtn");
+    f.classList.remove("activeBtn");
+g.classList.remove("activeBtn");
+h.classList.remove("activeBtn");
+i.classList.remove("activeBtn");
+j.classList.remove("activeBtn");
+k.classList.remove("activeBtn");  
+l.classList.remove("activeBtn");
+m.classList.remove("activeBtn");
+n.classList.add("activeBtn");
+}
+
 
 document.onload(changeStation1());
         
     </script>
-    <p>Caso tenha problemas utilize a opção offline em <a href="index.html" download="Radio-Player.html"> HTML</a></p>
+    <p>Caso tenha problemas utilize a opção offline em <a href="index.html" download="Radio-Player.html"> HTML</a> ou <a href="radios.txt" download="Radio-Player.m3u">Playlist</a></p>
      <br/>
       <br/>
     <a href="http://websdr.ewi.utwente.nl:8901/">Wide-band WebSDR</a>
     <br/>
    
-     <a href="https://drive.google.com/drive/folders/1gXOn7KLDudti6-tlAZVnkYjNIuN1ZC_b?usp=share_link">Audios</a>
+     <a href="https://drive.google.com/drive/folders/1gXOn7KLDudti6-tlAZVnkYjNIuN1ZC_b?usp=share_link">Áudios</a>
 </div>
 
 </body>
